@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fonts -->
+        <!-- Josefin Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <!-- Josefin Sans -->
+
+        <!-- Jost -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+        <!-- Jost -->
+    <!-- /Fonts -->
+
+        <!-- FooterStyle -->
+        <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+        <!-- FooterStyle -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/formstyle.css">
+    <!-- /Style css -->
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
+
+
+    <title>Services</title>
+</head>
+
+<body onload="extraer()">
+
+    <!-- Navbar -->
+    <div id="navBar"></div>
+    <!-- /Navbar -->
+
+    <!-- Registro e Inicio de sesion -->
+    <div id="modalUser"></div>
+    <!-- /Registro e Inicio de sesion -->
+
+    <!-- Carrito de compras -->
+    <div id="shoppingCart"></div>
+    <!-- /Carrito de compras -->
+
+    <br><br><br><br><br>
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="row  align-items-center">
+
+            <!-- Entradas de la calculadora -->
+            <div class="col-xl-6" style="background-color: white; border-radius: 10px; padding: 50px;" data-aos="fade-up" data-aos-duration="2000">
+                <div class="row mt">
+                    <div class="col-md-6 mt-3">
+                        <select id="genero" class="form-control form-style rounded-0 jost"> 
+                            <option disabled selected>Género</option>
+                            <option>Femenino</option>
+                            <option>Masculino</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <input type="number" class="form-control jost rounded-0 input-style" id="edad" placeholder="Edad" min="20" max="105">
+                        <span id="messageErrorAge"></span>
+                    </div>
+                </div>
+                <div class="row mt">
+                    <div class="col-md-6 mt-3">
+                        <input type="number" class="form-control jost rounded-0 input-style" id="altura" placeholder="Altura (cm)" min="120" max="230">
+                     <span id="messageErrorheight"></span>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <input type="number" class="form-control jost rounded-0 input-style" id="peso" placeholder="Peso (kg)" min="30" max="250">
+                        <span id="messageErrorweight"></span> 
+                    </div>
+                </div>
+                <div class="row mt">
+                    <div class="col-md-6 mt-3">
+                        <select id="nivelDeActividad" class="form-control form-style rounded-0 jost">
+                            <option disabled selected>Actividad diaria ℹ️</option>
+                            <option>Sedentario</option>
+                            <option>Ligero</option>
+                            <option>Activo</option>
+                            <option>Muy activo</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <select id="intensidadAlEjercitar" class="form-control form-style rounded-0 jost">
+                            <option disabled selected>Intensidad de ejercicio ℹ️</option>
+                            <option>Ninguna</option>
+                            <option>Ligero</option>
+                            <option>Moderado</option>
+                            <option>Dificil</option>
+                            <option>Intenso</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt">
+                    <div class="col-md-6 mt-3">
+                        <input type="number" class="form-control jost rounded-0 input-style" id="ejercitarDiasPorSemana"  placeholder="Días ejercicio por semana" min="1"
+                        max="7">
+                        <span id="messageErrorDaysOfExercise"></span>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <input type="number" class="form-control jost rounded-0 input-style" id="ejercitarMinutosPorDia" placeholder="Minutos de ejercicio por día" min="1"
+                        max="180">
+                        <span id="messageErrorMinutesPerDay"></span>
+                    </div>
+                </div>
+                <br>
+                <button class="btn bottom-style" id="Calcular" type="submit" onclick="getFormValues();">Calcular</button>
+            </form>
+            </div>
+            <!-- /Entradas de la calculadora -->
+
+
+            <!-- Resultados de la calculadora -->
+            <div class="col-xl-6 d-flex text-center flex-column jost mt-3">
+                <h1>Calculadora</h1>
+                <p style="font-size: 23px;">Llena los datos para calcular tus calorías ideales.</p>
+                <div class="d-flex flex-column" data-aos="fade-left" data-aos-duration="2000">
+     <p style="font-size: 20px;">
+                        Tu IMC es igual a:
+                        <span id="ResultIMC"></span>
+                    </p>
+                    <p style="font-size: 20px;">
+                        Tu gasto energético diario (TDEE) es de:
+                        <span id="tdeeResult"></span>
+                    </p>
+
+                    <p style="font-size: 20px;">
+                        Para bajar grasa necesitas:
+                        <span id="bajarResult"></span>
+                    </p>
+
+                    <p style="font-size: 20px;">
+                        Para aumentar masa muscular necesitas:
+                        <span id="aumentarResult"></span>
+                    </p>
+                </div>
+            </div>
+            <!-- /Resultados de la calculadora -->
+
+
+        </div>
+
+    </div>
+    <!-- /Contenido principal -->
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+        <br><br><br>
+        
+
+      
+
+        
+    <div class="row" id="dieta"></div><br><br>
+
+
+ 
+    
+    </div>
+    <!-- /Contenido principal -->
+
+    <br><br><br><br><br>
+
+    <!-- Footer -->
+    <div id="footerSection"></div>
+    <!-- Footer -->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS -->
+
+    <!-- AOS -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS -->
+
+    <!-- Scripts -->
+        <!-- navbar -->
+            <script src="assets/js/navbarWhite.js"></script>
+        <!-- navbar -->
+
+        <!-- Shopping Cart -->
+            <script src="assets/js/shoppingcart.js"></script>
+        <!-- Shopping Cart -->
+
+        <!-- Modal User -->
+            <script src="assets/js/modaluser.js"></script>
+        <!-- /Modal User -->
+
+        <!-- Email -->
+            <script src="assets/js/email.js"></script>
+        <!-- /Email -->
+
+        <!-- Mailtrap -->
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <!-- /Mailtrap -->
+
+        <!-- Calculadora -->
+            <script src="assets/js/calculadora.js"></script>
+        <!-- Calculadora -->
+
+        <!-- Footer Script -->
+            <script src="assets/js/footer.js"></script>
+            <!-- Footer Script -->
+        <!--Carrito SesionStorage -->
+           <script src="/assets/js/sesionStorage.js"></script>
+        <!--Carrito SesionStorage -->
+
+
+    <!-- Scripts -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

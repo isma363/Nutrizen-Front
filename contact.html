@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fonts -->
+        <!-- Josefin Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <!-- Josefin Sans -->
+
+        <!-- Jost -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+        <!-- Jost -->
+    <!-- /Fonts -->
+
+    <!-- FooterStyle -->
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <!-- FooterStyle -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/formstyle.css">
+    <!-- /Style css -->
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
+
+
+    <title>Contacto</title>
+</head>
+
+<body onload="extraer()">
+
+    <!-- Navbar -->
+    <div id="navBar"></div>
+    <!-- /Navbar -->
+
+    <!-- Registro e Inicio de sesion -->
+    <div id="modalUser"></div>
+    <!-- /Registro e Inicio de sesion -->
+
+    <!-- Carrito de compras -->
+    <div id="shoppingCart"></div>
+    <!-- /Carrito de compras -->
+
+    <br><br><br><br><br>
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 mb-3 ">
+                <h1>Contacto</h1>
+                <p style="font-size: 23px;">Si deseas consultar más información de nuestros productos y/o servicios, o tienes alguna duda al respecto, puedes contactarnos ¡estamos para ayudarte!</p>
+                <div class="d-flex justify-content-center" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="assets/img/peach.png" class="img-fluid" alt="peach" style="width: 55%; opacity: 0.6;">
+                </div>
+            </div>
+            <div class="col-xl-6" style="background-color: white; border-radius: 10px; padding: 50px;" data-aos="fade-up" data-aos-duration="2000">
+                <form>
+                    <div class="row mt">
+                        <div class="col-md-6 mt-3">
+                            <input type="text" class="form-control jost rounded-0 input-style" id="firstName" aria-describedby="emailHelp" placeholder="Nombre">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <input type="text" class="form-control jost rounded-0 input-style" id="lastName" aria-describedby="emailHelp" placeholder="Apellido">
+                        </div>
+                        <span id="messageErrorName"></span>
+                    </div>
+                    <div class="row mt">
+                        <div class="col-md-6 mt-3">
+                            <input type="email" class="form-control jost rounded-0 input-style" id="email" placeholder="Correo electronico">
+                            <span id="messageErrorEmail"></span>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <input type="text" class="form-control jost rounded-0 input-style" id="phone" placeholder="Telefono" maxlength="10">
+                            <span id="messageErrorPhone"></span>
+                        </div>
+                    </div>
+                    <div class="row mt">
+                        <div class="col mt-3">
+                            <textarea type="text" class="form-control jost rounded-0 input-style" id="msg" placeholder="Mensaje" style="min-height: 150px; max-height: 300px;"></textarea>
+                        </div>
+                        <span id="messageErrorMessage"></span>
+                    </div>
+                </form>
+                <button type="submit" class="btn bottom-style jost w-100 mt-4" onclick="contactValidation(); dataForm(); almacenamiento();">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <!-- /Contenido principal -->
+
+    <br><br><br><br><br><br><br><br><br>
+    <!-- Footer -->
+    <div id="footerSection"></div>
+    <!-- Footer -->
+
+
+
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS -->
+
+    <!-- AOS -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS -->
+
+    <!-- Scripts -->
+        <!-- navbar -->
+            <script src="assets/js/navbarWhite.js"></script>
+        <!-- navbar -->
+
+        <!-- Shopping Cart -->
+            <script src="assets/js/shoppingcart.js"></script>
+        <!-- Shopping Cart -->
+
+        <!-- Modal User -->
+            <script src="assets/js/modaluser.js"></script>
+        <!-- /Modal User -->
+
+        <!-- Email -->
+            <script src="assets/js/email.js"></script>
+        <!-- /Email -->
+
+        <!-- Mailtrap -->
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <!-- /Mailtrap -->
+
+        <!-- localForm -->
+            <script src="assets/js/localform.js"></script>
+        <!-- localForm -->
+
+        <!-- Footer Script -->
+            <script src="assets/js/footer.js"></script>
+        <!-- Footer Script -->
+
+        <!-- Validacion de formulario -->
+            <script src="assets/js/formvalidation.js"></script>
+            <!-- Validacion de formulario -->
+
+        <!-- SweetAlert -->
+        <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script> 
+        <!-- SweetAlert -->
+          <!--Carrito SesionStorage -->
+          <script src="/assets/js/sesionStorage.js"></script>
+          <!--Carrito SesionStorage -->
+    <!-- Scripts -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?t1oonh');
+  src:  url('../fonts/icomoon.eot?t1oonh#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?t1oonh') format('truetype'),
+    url('../fonts/icomoon.woff?t1oonh') format('woff'),
+    url('../fonts/icomoon.svg?t1oonh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Iconos Flechas */
+.icon-angle-circle-left:before {
+  content: "\e902";
+}
+.icon-angle-circle-right:before {
+  content: "\e903";
+}
+
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
+
+/* Icons Usuario */
+.icon-user:before {
+  content: "\e908";
+}
+
+.icon-user1:before {
+  content: "\e971";
+}
+
+/* Icon Carrito */
+.icon-cart:before {
+  content: "\e904";
+}
+
+.icon-cart1:before {
+  content: "\e93a";
+}
+
+
+/* Icon Menu */
+.icon-menu-burger:before {
+  content: "\e905";
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+
+/* Icon Iniciar Sesion */
+.icon-sign-in:before {
+  content: "\e906";
+}
+.icon-enter:before {
+  content: "\ea13";
+}
+
+/* Icon Registrarse */
+.icon-sign-out:before {
+  content: "\e907";
+}
+
+.icon-clipboard:before {
+  content: "\e9b8";
+}
+
+
+/* Icon Cancelar */
+.icon-cancel-circle:before {
+  content: "\ea0d";
+  font-size: 25px;
+}
+.icon-cross:before {
+  content: "\e909";
+}
+
+/* Icon plus */
+.icon-plus:before {
+  content: "\e90a";
+}
+.icon-plus-circle:before {
+  content: "\e90b";
+}
+.icon-plus-circle-dark:before {
+  content: "\e90c";
+}
+
+
+/* Icon Nutrizen */
+.icon-lotus_nutrizen:before {
+  content: "\e900";
+}
+.icon-nutrizen_logo:before {
+  content: "\e901";
+}
+
+/* Icon Redes Sociales */
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+/* Warning */
+.icon-notification:before {
+  content: "\ea08";
+}

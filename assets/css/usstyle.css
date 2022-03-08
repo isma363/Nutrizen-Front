@@ -1,0 +1,11 @@
+.networks-style{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.networks-style a{
+    text-decoration: none;
+    color: #3F3F44;
+}
+.networks-style a:hover{
+    color: #7FCD91;
+}

@@ -1,0 +1,253 @@
+body{
+    background-color: #F7F7F7;
+}
+
+
+/* Fonts de la pagina */
+.josefin-sans{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.jost{
+    font-family: 'Jost', sans-serif;
+}
+
+/* Estilo del cuerpo de la pagina */
+body{
+    background-color: #F7F7F7;
+    color: #3F3F44;
+}
+
+/* Estilo de la barra de navegacion */
+nav{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+.bg-white{
+    background-color: #F7F7F7;
+    box-shadow: 0 4px 8px 0 rgba(63, 63, 68, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* #link-style{
+    font-weight: bold;
+} */
+#link-style li a{
+    padding-right: 40px;
+}
+#link-style li a:hover{
+    /* color: #CCEABB; */
+    color: #7FCD91;
+    /* font-size: 20px; */
+}
+
+.drop-style{
+    background-color: white;
+    border: none;
+}
+.drop-style li a:hover{
+    background-color: #F7F7F7;
+    border: none;
+}
+
+.drop-style li a:active{
+    background-color: #F7F7F7;
+    border: none;
+}
+
+
+/* Icono menu */
+.icon-menu-style{
+    color: #3F3F44;
+    text-decoration: none;
+}
+.icon-menu-style:hover{
+    /* color: #CCEABB; */
+    color: #7FCD91;
+}
+
+.icon-menu-style:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/* Boton cerrar offcanvas */
+.color-close{
+    color: #F7F7F7;
+    text-decoration: none;
+}
+.color-close:hover{
+    /* color: #CCEABB; */
+    color: #7FCD91;
+}
+
+/* Offcanvas Style */
+.canvas-style{
+    background-color: #3F3F44; 
+    color: #F7F7F7; 
+    opacity: 0.9;
+}
+
+/* Modal Style */
+.modal-style{
+    background-color: white;
+    color: #3F3F44;
+    border-radius: 10px;
+}
+
+/*Iconos de la ventana modal usuario*/
+#iconsModal a{
+    color: #3F3F44;
+    font-size: 50px;
+    text-decoration: none;
+}
+#iconsModal a:hover{
+    /* color: #CCEABB; */
+    color: #7FCD91;
+}
+.bottom-style{
+    /* background-color: #CCEABB; */
+    background-color: #7FCD91;
+    color: #F7F7F7;
+    width: 100%;
+    font-size: 20px;
+}
+.bottom-style:hover{
+    background-color: #F7F7F7;
+    /* color: #CCEABB; */
+    color: #7FCD91;
+    border: solid 2px #7FCD91;
+}
+.bottom-style:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/* Form Style */
+.form-style{
+    background-color: white;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px #3F3F44;
+}
+.form-style:focus{
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+/* CARDS */
+.card-style{
+    background-color: white;
+    color: #3F3F44;
+    height: 100%;
+}
+.card-btn{
+    background-color: #7FCD91;
+    color: #F7F7F7;
+    font-size: 20px;
+}
+.card-btn:hover{
+    background-color: #F7F7F7;
+    color: #3F3F44;
+}
+.card-btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/* Boton agregar productos */
+.add-bottom-style{
+    font-size: 55px;
+    color: #3F3F44;
+}
+.add-bottom-style:hover{
+    color: #7FCD91;
+    text-shadow: 0px 0px 10px #CCEABB;
+}
+.add-bottom-style:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.a-style{
+    color: #3F3F44;
+    text-decoration: none;
+}
+.a-style:hover{
+    color: #7FCD91;
+}
+
+.a-style-inverse{
+    color: #7FCD91;
+    text-decoration: none;
+}
+.a-style-inverse:hover{
+    color: #F7F7F7;
+}
+
+/* Botones de index */
+.index-buttom {
+    border: solid 2px #7FCD91;
+    font-size: 20px;
+}
+.index-buttom:hover{
+    border: solid 2px #3F3F44;
+    font-size: 20px;
+    color: #7FCD91;
+}
+.index-buttom:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.index-buttom-dos {
+    background-color: #7FCD91;
+    font-size: 20px;
+    color: #F7F7F7;
+}
+.index-buttom-dos:hover{
+    border: solid 2px #7FCD91;
+    font-size: 20px;
+    background-color: #F7F7F7;
+    color: #7FCD91;
+}
+.index-buttom-dos:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/* Iconos carrusel index */
+.icons-carousel{
+    font-size: 50px;
+    color: #F7F7F7;
+}
+.icons-carousel:hover{
+    color: #7FCD91;
+}
+
+
+/* SweetAlerts */
+.swal-text{
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+/* BlackColorText */
+.txt-color-black{
+    color: #3F3F44;
+}
+
+/*Etiqueta a de register*/
+.register-here{
+    color: #3F3F44;
+    text-decoration: none;
+    font-size: 20px;
+}
+.register-here:hover{
+    color: #7FCD91;
+    text-decoration: underline #3F3F44;
+}

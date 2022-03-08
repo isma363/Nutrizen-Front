@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fonts -->
+        <!-- Josefin Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <!-- Josefin Sans -->
+
+        <!-- Jost -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+        <!-- Jost -->
+    <!-- /Fonts -->
+        <!-- FooterStyle -->
+        <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+        <!-- FooterStyle -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/formstyle.css">
+    <!-- /Style css -->
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
+
+    <title>Productos</title>
+</head>
+
+<body onload="recuperardatos()">
+    <!-- Navbar -->
+    <div id="navBar"></div>
+    <!-- /Navbar -->
+
+    <!-- Registro e Inicio de sesion -->
+    <div id="modalUser"></div>
+    <!-- /Registro e Inicio de sesion -->
+    <div id="modalPago"></div>
+
+    <!-- Carrito de compras -->
+    <div class ="shoppingCart" id="shoppingCart"></div>
+    <!-- /Carrito de compras -->
+
+    <!-- Modal agregar item -->
+    <div id="modalAdd">
+    </div>
+    <!-- /Modal agregar item -->
+
+    <div id="buttomAdd">
+    </div>
+    <br><br><br><br><br>
+    <!-- Contenido principal -->
+    <div class="container">
+
+        <!-- Agregar items -->
+        <div class="row" id="list-items">
+        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000" style="padding-bottom: 25px;">
+            <div class="card card-style jost border border-0">
+                <img src="https://gnc.com.mx/media/catalog/product/cache/d5c3974ef86b1c3c0d3b6947ccba778f/1/4/141604182-tm-luxury-nut-mix-70-grs-a.jpg" class="card-img-top" id="imgProduct"
+                    alt="Fissure in Sandstone" />
+                <div class="card-body">
+                    <h4 class="card-price text-justify" id="price" name="price">$<b id="priceT">50</b></h4>
+                    <h5 class="card-title" id="title" name="title">Mezcla de nueces Nature's Heart</h5>
+                    <p class="card-text text-justify">
+                        Mezcla de nueces Nature's Heart Luxury Nut Mix 70g
+                    </p>
+                </div>
+                <div class= "amount" style="padding: 16px;">
+                    <input type="number" id="name" class="form-control form-style form-style border border-0 border-bottom border-dark rounded-0 transparent-input jost" min="1" max="10" value="1" name="name"/>
+                    <br>
+                    <a href="#!" class="btn index-buttom-dos addToCart" style="width: 100%;" data-id="1">Agregar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000" style="padding-bottom: 25px;">
+            <div class="card card-style jost border border-0">
+                <img src="https://gnc.com.mx/media/catalog/product/cache/d5c3974ef86b1c3c0d3b6947ccba778f/1/4/141604309-ultrapure-creatine-micronizada-500-gramos-a_1.jpg" class="card-img-top" id="imgProduct"
+                    alt="Fissure in Sandstone">
+                <div class="card-body">
+                    <h4 class="card-price text-justify" id="price" name="price">$<b id= "priceT">720</b></h4>
+                    <h5 class="card-title" id="title" name="title">Creatine</h5>
+                    <p class="card-text text-justify">
+                        Ultrapure Creatine Micronizada - 500 gramos
+                    </p>
+                </div>
+                <div style="padding: 16px;">
+                    <input type="number" id="name" class="form-control form-style form-style border border-0 border-bottom border-dark rounded-0 transparent-input jost" min="1" max="10" value="1"/>
+                    <br>
+                    <a href="#!" class="btn index-buttom-dos addToCart" style="width: 100%;" data-id="1">Agregar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000" style="padding-bottom: 25px;">
+            <div class="card card-style jost border border-0">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTwxLO2t6AgbnUS8x4mIOt1BbGGfSHKnVN1ygbfzKCkgq50ZS1o_qYmet-umQCNhsYl06vMksejctVtICWNli4s9yywNaYlnp5bJiyD-985BLXxWlR_47fJ&usqp=CAE"
+                 class="card-img-top" id="imgProduct" 
+                    alt="Fissure in Sandstone" />
+                <div class="card-body">
+                    <h4 class="card-price text-justify" id="price" name="price">$<b id="priceT">350</b></h4>
+                    <h5 class="card-title" id="title" name="title">Omega 3</h5>
+                    <p class="card-text text-justify">
+                        Aceite puro de Salmón, fuente de Omega 3 (EPA-DHA)
+                    </p>
+                </div>
+                <div style="padding: 16px;">
+                    <input type="number" id="name" class="form-control form-style form-style border border-0 border-bottom border-dark rounded-0 transparent-input jost" min="1" max="10" value="1"/>
+                    <br>
+                    <a href="#!" class="btn index-buttom-dos addToCart" style="width: 100%;" data-id="1">Agregar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000" style="padding-bottom: 25px;">
+            <div class="card card-style jost border border-0">
+                <img src="https://gnc.com.mx/media/catalog/product/cache/d5c3974ef86b1c3c0d3b6947ccba778f/b/l/blender_bottle_sport_mixer-plum_141603345_a.jpg" class="card-img-top" id="imgProduct"
+                    alt="Fissure in Sandstone" />
+                <div class="card-body">
+                    <h4 class="card-price text-justify" id="price" name="price">$<b id="priceT">350</b></h4>
+                    <h5 class="card-title" id="title" name="title">Shaker Deportivo</h5>
+                    <p class="card-text text-justify">
+                        Bote mezclador. Ayuda a diluir el batido de tu preferencia y evita grumos
+                    </p>
+                </div>
+                <div style="padding: 16px;">
+                    <input type="number" id="name" class="form-control form-style form-style border border-0 border-bottom border-dark rounded-0 transparent-input jost" min="1" max="10" value="1"/>
+                    <br>
+                    <a href="#!" class="btn index-buttom-dos addToCart" style="width: 100%;" data-id="1">Agregar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000" style="padding-bottom: 25px;">
+            <div class="card card-style jost border border-0">
+                <img src="https://gnc.com.mx/media/catalog/product/cache/d5c3974ef86b1c3c0d3b6947ccba778f/1/3/138101002-5h8-nutrition-lcarnitina-con-complejo-b-120-caps-a-b.jpg" class="card-img-top" id="imgProduct"
+                    alt="Fissure in Sandstone" />
+                <div class="card-body">
+                    <h4 class="card-price text-justify" id="price" name="price">$<b id="priceT">400</b></h4>
+                    <h5 class="card-title" id="title" name="title">Carnitina con complejo B</h5>
+                    <p class="card-text text-justify">
+                        producto que contiene vitaminas del grupo B con 120 capsulas
+                    </p>
+                </div>
+                <div style="padding: 16px;">
+                    <input type="number" id="name" class="form-control form-style form-style border border-0 border-bottom border-dark rounded-0 transparent-input jost" min="1" max="10" value="1"/>
+                    <br>
+                    <a href="#!" class="btn index-buttom-dos addToCart" style="width: 100%;" data-id="1">Agregar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000" style="padding-bottom: 25px;">
+            <div class="card card-style jost border border-0">
+                <img src="https://gnc.com.mx/media/catalog/product/cache/d5c3974ef86b1c3c0d3b6947ccba778f/1/4/141603713_eat_me_guilt_free_brownie_de_proteina_a.jpg" class="card-img-top" id="imgProduct"
+                    alt="Fissure in Sandstone" />
+                <div class="card-body">
+                    <h4 class="card-price text-justify" id="price" name="price">$<b id="priceT">50</b></h4>
+                    <h5 class="card-title" id="title" name="title">Brownie</h5>
+                    <p class="card-text text-justify">
+                        Brownie de proteina de chocolate 55gr.
+                    </p>
+                </div>
+                <div style="padding: 16px;">
+                    <input type="number" id="name" class="form-control form-style form-style border border-0 border-bottom border-dark rounded-0 transparent-input jost" min="1" max="10" value="1"/>
+                    <br>
+                    <a href="#!" class="btn index-buttom-dos addToCart" style="width: 100%;" data-id="1">Agregar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000" style="padding-bottom: 25px;">
+            <div class="card card-style jost border border-0">
+                <img src="https://gnc.com.mx/media/catalog/product/cache/d5c3974ef86b1c3c0d3b6947ccba778f/n/a/nature_s_truth_aceite_esencial_de_menta_141603292_a.jpg" class="card-img-top" id="imgProduct"
+                    alt="Fissure in Sandstone" />
+                <div class="card-body">
+                    <h4 class="card-price text-justify" id="price" name="price">$<b id="priceT">270</b></h4>
+                    <h5 class="card-title" id="title" name="title">Aceite Esencial de menta</h5>
+                    <p class="card-text text-justify">
+                        Nature's Truth aceite esencial de menta 15 ml
+                    </p>
+                </div>
+                <div style="padding: 16px;">
+                    <input type="number" id="name" class="form-control form-style form-style border border-0 border-bottom border-dark rounded-0 transparent-input jost" min="1" max="10" value="1"/>
+                    <br>
+                    <a href="#!" class="btn index-buttom-dos addToCart" style="width: 100%;" data-id="1">Agregar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000" style="padding-bottom: 25px;">
+            <div class="card card-style jost border border-0">
+                <img src="https://gnc.com.mx/media/catalog/product/cache/d5c3974ef86b1c3c0d3b6947ccba778f/1/4/141603291_nature_s_truth_aceite_esencial_de_lavanda_a_1.jpg" class="card-img-top" id="imgProduct"
+                    alt="Fissure in Sandstone" />
+                <div class="card-body">
+                    <h4 class="card-price text-justify" id="price" name="price">$<b id="priceT">270</b></h4>
+                    <h5 class="card-title" id="title" name="title">Aceite esencial de lavanda</h5>
+                    <p class="card-text text-justify">
+                        Aceite esencial de lavanda 15 ml
+                    </p>
+                </div>
+                <div style="padding: 16px;">
+                    <input type="number" id="name" class="form-control form-style form-style border border-0 border-bottom border-dark rounded-0 transparent-input jost" min="1" max="10" value="1"/>
+                    <br>
+                    <a href="#!" class="btn index-buttom-dos addToCart" style="width: 100%;" data-id="1">Agregar</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+        <!-- /Agregar items -->
+
+    </div>
+    <!-- /Contenido principal -->
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <!-- Footer -->
+    <div id="footerSection"></div>
+    <!-- Footer -->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS -->
+
+    <!-- AOS -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS -->
+
+    <!-- Scripts -->
+        <!-- navbar -->
+            <script src="assets/js/navbarWhite.js"></script>
+        <!-- navbar -->
+
+        <!-- Shopping Cart -->
+            <script src="assets/js/shoppingcart.js"></script>
+        <!-- Shopping Cart -->
+
+        <!-- Modal User -->
+            <script src="assets/js/modaluser.js"></script>
+        <!-- /Modal User -->
+
+        <!-- Modal Pago -->
+        <script src="assets/js/modalPago.js"></script>
+        <!-- /Modal Pago -->
+        <!-- SweetAlert -->
+        <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script> 
+        <!-- SweetAlert -->
+        <!-- addItems -->
+            <script src="assets/js/additem.js"></script>
+        <!-- /addItems -->
+        <!--shopping cart products-->
+            <script src="/assets/js/carrito.js"></script>
+         <!--   shopping cart products-->
+        <!-- Footer Script -->
+            <script src="assets/js/footer.js"></script>
+            <!-- Footer Script -->
+            <!--Carrito SesionStorage -
+          <script src="/assets/js/sesionStorage.js"></script>
+          Carrito SesionStorage -->
+
+        <!-- SweetAlert -->
+        <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script> 
+        <!-- SweetAlert -->
+
+    <!-- Scripts -->
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

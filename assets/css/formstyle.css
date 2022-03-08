@@ -1,0 +1,16 @@
+.input-style{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px #3F3F44;
+}
+
+.input-style:focus{
+    outline: none;
+    box-shadow: none;
+    border-bottom: solid 3px #7FCD91;
+}
+
+.input-style-error{
+    border-bottom: solid 3px #FDCB9E;
+}
